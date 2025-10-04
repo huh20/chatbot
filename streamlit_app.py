@@ -56,8 +56,4 @@ else:
         st.session_state.messages.append({"role": "assistant", "content": response})
 
 from numpy.random import default_rng as rng
-
-df = pd.DataFrame(rng(0).standard_normal((20, 3)), columns=["a", "b", "c"])
-
-st.line_chart(df)
-
+st.link_button("Go to gallery", "https://streamlit.io/gallery")
